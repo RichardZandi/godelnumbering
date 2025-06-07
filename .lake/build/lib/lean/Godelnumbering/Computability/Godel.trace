@@ -1,0 +1,28 @@
+{"log":
+ [{"message":
+   ".> LEAN_PATH=/Users/richardzandi/godelnumbering/.lake/packages/Cli/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/batteries/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/Qq/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/aesop/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/importGraph/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/plausible/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/mathlib/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/build/lib/lean /Users/richardzandi/.elan/toolchains/leanprover--lean4---v4.20.0/bin/lean -DautoImplicit=false /Users/richardzandi/godelnumbering/Godelnumbering/Computability/Godel.lean -R /Users/richardzandi/godelnumbering -o /Users/richardzandi/godelnumbering/.lake/build/lib/lean/Godelnumbering/Computability/Godel.olean -i /Users/richardzandi/godelnumbering/.lake/build/lib/lean/Godelnumbering/Computability/Godel.ilean -c /Users/richardzandi/godelnumbering/.lake/build/ir/Godelnumbering/Computability/Godel.c --json",
+   "level": "trace"},
+  {"message":
+   "/Users/richardzandi/godelnumbering/Godelnumbering/Computability/Godel.lean:27:4: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`",
+   "level": "warning"}],
+ "inputs":
+ [["Godelnumbering.Computability.Godel:deps",
+   [["deps",
+     [["godelnumbering/godelnumbering:extraDep",
+       [["@godelnumbering:extraDep", "1723"]]],
+      ["import oleans",
+       [["Mathlib.Logic.Encodable.Basic:olean",
+         [["Mathlib.Logic.Encodable.Basic:deps", "7543376838821913755"],
+          ["/Users/richardzandi/godelnumbering/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Encodable/Basic.olean",
+           "7053102986929655830"]]]]]]],
+    ["libs",
+     [["import dynlibs", "1723"],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.20.0, commit 77cfc4d1a4f6ef6651792b781eaa6676b4f3f060",
+   "16311077432335102250"],
+  ["Module.leanArgs: #[-DautoImplicit=false]", "9493458992184788043"],
+  ["/Users/richardzandi/godelnumbering/Godelnumbering/Computability/Godel.lean",
+   "10143674158234555838"]],
+ "depHash": "12548067726568136187"}

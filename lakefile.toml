@@ -1,0 +1,10 @@
+name = "godelnumbering"
+version = "0.1.0"
+defaultTargets = ["godelnumbering"]
+
+[[lean_lib]]
+name = "Godelnumbering"
+
+[[lean_exe]]
+name = "godelnumbering"
+root = "Main"
