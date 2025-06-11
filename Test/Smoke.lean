@@ -10,3 +10,5 @@ by
   have inj : Function.Injective (Numbering.encode : ℕ → ℕ) :=
     Numbering.encode_injective (α := ℕ) _
   exact inj h        -- feed `h`; Lean infers `m` and `n`
+
+#lint

@@ -25,10 +25,11 @@ namespace Godel
 
 /-! ## Constant codes -/
 
-/-- Evaluating a *constant* code always yields that constant. -/
+/- Evaluating a *constant* code always yields that constant.
 @[simp] lemma eval_const (n x : ℕ) :
     Code.eval (Code.const n) x = Part.some n := by
   simp [Code.eval, Code.const]
+-/
 
 /-- The map `n ↦ Code.const n` is computable. -/
 lemma computable_const : Computable Code.const := by
@@ -60,3 +61,5 @@ def transportEval {α} [Numbering α] (idx : ℕ) (a : α) : Part α :=
   (Code.eval (numToCode idx) (Numbering.encode a)).map Numbering.decode
 
 end Godel
+
+#lint

@@ -1,7 +1,10 @@
 {"log":
  [{"message":
    ".> LEAN_PATH=/Users/richardzandi/godelnumbering/.lake/packages/Cli/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/batteries/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/Qq/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/aesop/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/importGraph/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/plausible/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/mathlib/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/build/lib/lean /Users/richardzandi/.elan/toolchains/leanprover--lean4---v4.20.0/bin/lean -DautoImplicit=false /Users/richardzandi/godelnumbering/Test/Smoke.lean -R /Users/richardzandi/godelnumbering -o /Users/richardzandi/godelnumbering/.lake/build/lib/lean/Test/Smoke.olean -i /Users/richardzandi/godelnumbering/.lake/build/lib/lean/Test/Smoke.ilean -c /Users/richardzandi/godelnumbering/.lake/build/ir/Test/Smoke.c --json",
-   "level": "trace"}],
+   "level": "trace"},
+  {"message":
+   "/Users/richardzandi/godelnumbering/Test/Smoke.lean:14:0: -- Found 0 errors in 0 declarations (plus 0 automatically generated ones) in the current file with 15 linters\n\n\n-- All linting checks passed!",
+   "level": "info"}],
  "inputs":
  [["Test.Smoke:deps",
    [["deps",
@@ -11,7 +14,7 @@
        [["Godelnumbering.Instances:olean",
          [["Godelnumbering.Instances:deps", "12480867122643209523"],
           ["/Users/richardzandi/godelnumbering/.lake/build/lib/lean/Godelnumbering/Instances.olean",
-           "12455459510064064759"]]]]]]],
+           "5243175195808167372"]]]]]]],
     ["libs",
      [["import dynlibs", "1723"],
       ["package external libraries", "1723"],
@@ -21,5 +24,5 @@
    "16311077432335102250"],
   ["Module.leanArgs: #[-DautoImplicit=false]", "9493458992184788043"],
   ["/Users/richardzandi/godelnumbering/Test/Smoke.lean",
-   "12316868291256196996"]],
- "depHash": "15443066513563375311"}
+   "2261694862488318320"]],
+ "depHash": "16373569516702967912"}

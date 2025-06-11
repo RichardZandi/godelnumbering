@@ -9,6 +9,7 @@ keeps downstream files uncluttered.
 This file is **sorry-free**.
 -/
 
+
 import Mathlib.Computability.Primrec
 import Mathlib.Computability.Partrec
 import Godelnumbering.Godel
@@ -31,30 +32,32 @@ instance instNumberingNat : Numbering ℕ where
     (Numbering.decode : ℕ → ℕ) n = n := rfl
 
 /-- `encode : ℕ → ℕ` is computable (it is the identity). -/
-instance instComputableEncodeNat :
+lemma instComputableEncodeNat :
     Computable (Numbering.encode : ℕ → ℕ) := by
   simpa using
     (Computable.id (α := ℕ) :
       Computable (fun n : ℕ ↦ n))
 
 /-- `decode : ℕ → ℕ` is computable (it is the identity). -/
-instance instComputableDecodeNat :
+lemma instComputableDecodeNat :
     Computable (Numbering.decode : ℕ → ℕ) := by
   simpa using
     (Computable.id (α := ℕ) :
       Computable (fun n : ℕ ↦ n))
 
 /-- …and both maps are primitive-recursive. -/
-instance instPrimrecEncodeNat :
+lemma instPrimrecEncodeNat :
     Primrec (Numbering.encode : ℕ → ℕ) := by
   simpa using
     (Primrec.id (α := ℕ) :
       Primrec (fun n : ℕ ↦ n))
 
-instance instPrimrecDecodeNat :
+lemma instPrimrecDecodeNat :
     Primrec (Numbering.decode : ℕ → ℕ) := by
   simpa using
     (Primrec.id (α := ℕ) :
       Primrec (fun n : ℕ ↦ n))
 
 end Godel
+
+#lint

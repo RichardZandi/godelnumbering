@@ -61,3 +61,5 @@ instance instEncodable (α : Type*) [Numbering α] : Encodable α where
 
 end Numbering
 end Godel
+
+#lint
