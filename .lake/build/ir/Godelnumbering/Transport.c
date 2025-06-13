@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Godelnumbering.Transport
-// Imports: Init Mathlib.Computability.PartrecCode Godelnumbering.Godel
+// Imports: Init Mathlib.Computability.PartrecCode Godelnumbering.Godel Mathlib.ModelTheory.Syntax
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -14,12 +14,18 @@
 extern "C" {
 #endif
 lean_object* l_Nat_Partrec_Code_const(lean_object*);
+LEAN_EXPORT lean_object* l_Godel_encodeSentence___rarg(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Godel_numToCode(lean_object*);
+LEAN_EXPORT lean_object* l_Godel_encodeSentence___boxed(lean_object*);
 LEAN_EXPORT lean_object* l_Godel_transportEval(lean_object*);
 LEAN_EXPORT lean_object* l_Godel_transportEval___rarg(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Godel_decodeSentence___rarg(lean_object*, lean_object*);
 lean_object* l_Part_map___elambda__1___rarg___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Nat_Partrec_Code_eval(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Godel_encodeSentence(lean_object*);
 extern lean_object* l_Nat_Partrec_Code_instDenumerable;
+LEAN_EXPORT lean_object* l_Godel_decodeSentence(lean_object*);
+LEAN_EXPORT lean_object* l_Godel_decodeSentence___boxed(lean_object*);
 LEAN_EXPORT lean_object* l_Godel_numToCode(lean_object* x_1) {
 _start:
 {
@@ -75,9 +81,66 @@ x_2 = lean_alloc_closure((void*)(l_Godel_transportEval___rarg), 3, 0);
 return x_2;
 }
 }
+LEAN_EXPORT lean_object* l_Godel_encodeSentence___rarg(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; lean_object* x_4; 
+x_3 = lean_ctor_get(x_1, 0);
+lean_inc(x_3);
+lean_dec(x_1);
+x_4 = lean_apply_1(x_3, x_2);
+return x_4;
+}
+}
+LEAN_EXPORT lean_object* l_Godel_encodeSentence(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; 
+x_2 = lean_alloc_closure((void*)(l_Godel_encodeSentence___rarg), 2, 0);
+return x_2;
+}
+}
+LEAN_EXPORT lean_object* l_Godel_encodeSentence___boxed(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; 
+x_2 = l_Godel_encodeSentence(x_1);
+lean_dec(x_1);
+return x_2;
+}
+}
+LEAN_EXPORT lean_object* l_Godel_decodeSentence___rarg(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; lean_object* x_4; 
+x_3 = lean_ctor_get(x_1, 1);
+lean_inc(x_3);
+lean_dec(x_1);
+x_4 = lean_apply_1(x_3, x_2);
+return x_4;
+}
+}
+LEAN_EXPORT lean_object* l_Godel_decodeSentence(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; 
+x_2 = lean_alloc_closure((void*)(l_Godel_decodeSentence___rarg), 2, 0);
+return x_2;
+}
+}
+LEAN_EXPORT lean_object* l_Godel_decodeSentence___boxed(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; 
+x_2 = l_Godel_decodeSentence(x_1);
+lean_dec(x_1);
+return x_2;
+}
+}
 lean_object* initialize_Init(uint8_t builtin, lean_object*);
 lean_object* initialize_Mathlib_Computability_PartrecCode(uint8_t builtin, lean_object*);
 lean_object* initialize_Godelnumbering_Godel(uint8_t builtin, lean_object*);
+lean_object* initialize_Mathlib_ModelTheory_Syntax(uint8_t builtin, lean_object*);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Godelnumbering_Transport(uint8_t builtin, lean_object* w) {
 lean_object * res;
@@ -90,6 +153,9 @@ res = initialize_Mathlib_Computability_PartrecCode(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Godelnumbering_Godel(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Mathlib_ModelTheory_Syntax(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));

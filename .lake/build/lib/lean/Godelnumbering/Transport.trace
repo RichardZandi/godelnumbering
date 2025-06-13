@@ -3,7 +3,7 @@
    ".> LEAN_PATH=/Users/richardzandi/godelnumbering/.lake/packages/Cli/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/batteries/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/Qq/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/aesop/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/importGraph/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/plausible/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/packages/mathlib/.lake/build/lib/lean:/Users/richardzandi/godelnumbering/.lake/build/lib/lean /Users/richardzandi/.elan/toolchains/leanprover--lean4---v4.20.0/bin/lean -DautoImplicit=false /Users/richardzandi/godelnumbering/Godelnumbering/Transport.lean -R /Users/richardzandi/godelnumbering -o /Users/richardzandi/godelnumbering/.lake/build/lib/lean/Godelnumbering/Transport.olean -i /Users/richardzandi/godelnumbering/.lake/build/lib/lean/Godelnumbering/Transport.ilean -c /Users/richardzandi/godelnumbering/.lake/build/ir/Godelnumbering/Transport.c --json",
    "level": "trace"},
   {"message":
-   "/Users/richardzandi/godelnumbering/Godelnumbering/Transport.lean:65:0: -- Found 0 errors in 4 declarations (plus 6 automatically generated ones) in the current file with 15 linters\n\n\n-- All linting checks passed!",
+   "/Users/richardzandi/godelnumbering/Godelnumbering/Transport.lean:109:0: -- Found 0 errors in 7 declarations (plus 14 automatically generated ones) in the current file with 15 linters\n\n\n-- All linting checks passed!",
    "level": "info"}],
  "inputs":
  [["Godelnumbering.Transport:deps",
@@ -18,7 +18,11 @@
         ["Godelnumbering.Godel:olean",
          [["Godelnumbering.Godel:deps", "15065918860613759047"],
           ["/Users/richardzandi/godelnumbering/.lake/build/lib/lean/Godelnumbering/Godel.olean",
-           "7728924750064277451"]]]]]]],
+           "7728924750064277451"]]],
+        ["Mathlib.ModelTheory.Syntax:olean",
+         [["Mathlib.ModelTheory.Syntax:deps", "1101007749254920325"],
+          ["/Users/richardzandi/godelnumbering/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/ModelTheory/Syntax.olean",
+           "12282574392605800797"]]]]]]],
     ["libs",
      [["import dynlibs", "1723"],
       ["package external libraries", "1723"],
@@ -28,5 +32,5 @@
    "16311077432335102250"],
   ["Module.leanArgs: #[-DautoImplicit=false]", "9493458992184788043"],
   ["/Users/richardzandi/godelnumbering/Godelnumbering/Transport.lean",
-   "15456335420564048544"]],
- "depHash": "15092492157822960284"}
+   "15329952411725314263"]],
+ "depHash": "15936070447948159415"}
